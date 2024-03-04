@@ -1,2 +1,2 @@
-# code1
-html
+created new file index.html
+this this a website clone called clickup
