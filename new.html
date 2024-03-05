@@ -1,558 +1,1070 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClickUp</title>
-</head>
-<div>
-    <header>
-        <div>
-            <svg width="146" height="38" viewBox="0 0 146 38" fill="none" xmlns="http://www.w3.org/2000/svg"
-                aria-label="ClickUp" class="" data-testid="cu-logo">
-                <defs>
-                    <linearGradient id="bottom-647" x1="5.61511" y1="31.179" x2="32.7893" y2="31.179"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#8930FD"></stop>
-                        <stop offset="1" stop-color="#49CCF9"></stop>
-                    </linearGradient>
-                    <linearGradient id="top-647" x1="5.94116" y1="13.0864" x2="31.9781" y2="13.0864"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FF02F0"></stop>
-                        <stop offset="1" stop-color="#FFC800"></stop>
-                    </linearGradient>
-                </defs>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.61511 27.2592L10.6296 23.4086C13.2937 26.894 16.1242 28.5006 19.2749 28.5006C22.4086 28.5006 25.1591 26.913 27.7032 23.455L32.7893 27.2128C29.1185 32.1993 24.5568 34.8339 19.2749 34.8339C14.0098 34.8339 9.40387 32.2161 5.61511 27.2592Z"
-                    fill="url(#bottom-647)"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M18.9923 10.5228L10.0669 18.2325L5.94116 13.4361L19.0112 2.14587L31.9781 13.4445L27.8334 18.2241L18.9923 10.5228Z"
-                    fill="url(#top-647)"></path>
-                <path
-                    d="M51.7539 30.0767C48.7065 30.0767 46.1666 29.0866 44.1069 27.1063C42.0472 25.0987 41.0321 22.5252 41.0321 19.3839C41.0321 16.2172 42.0746 13.6142 44.1343 11.577C46.2235 9.51234 48.7634 8.49478 51.7834 8.49478C55.509 8.49478 58.8092 10.1056 60.7299 12.6241L57.3707 16.1602C55.7617 14.4333 54.0116 13.5572 52.1225 13.5572C50.5135 13.5572 49.1867 14.0934 48.0852 15.1976C47.0132 16.3017 46.4783 17.6887 46.4783 19.3564C46.4783 20.9693 47.0132 22.3268 48.0852 23.4309C49.1867 24.5054 50.5135 25.0417 52.093 25.0417C54.1527 25.0417 55.9597 24.136 57.455 22.3542L60.9552 25.7214C59.9949 26.9944 58.6975 28.0416 57.0885 28.8607C55.4795 29.6819 53.702 30.0767 51.7539 30.0767ZM66.8753 8.18234V29.7663H61.9092V8.18234H66.8753ZM71.5823 12.7634C69.9185 12.7634 68.7054 11.5474 68.7054 9.87967C68.7054 8.26678 69.9754 7.05078 71.5823 7.05078C73.1913 7.05078 74.4338 8.26678 74.4338 9.87967C74.4338 11.5474 73.1913 12.7656 71.5823 12.7656V12.7634ZM74.0948 14.1504V29.7663H69.0993V14.1504H74.0948ZM83.6562 30.1062C81.2005 30.1062 79.2251 29.342 77.675 27.8136C76.1503 26.2872 75.3879 24.3344 75.3879 21.9299C75.3879 19.5253 76.1503 17.5747 77.7024 16.0462C79.2546 14.5178 81.2574 13.7557 83.7404 13.7557C86.9858 13.7557 89.8374 15.339 91.1621 18.3093L87.1838 20.4036C86.394 19.0736 85.2926 18.3938 83.8541 18.3938C82.8095 18.3938 81.9629 18.7337 81.2848 19.4134C80.963 19.7471 80.7101 20.1411 80.5406 20.573C80.3712 21.0048 80.2884 21.4659 80.297 21.9299C80.297 23.9946 81.7923 25.523 83.7973 25.523C85.2357 25.523 86.5625 24.7313 87.1269 23.5153L91.1073 25.8903C89.751 28.4933 86.9584 30.1062 83.6562 30.1062ZM108.429 29.7663H102.501L97.8993 23.5702L97.1664 24.25V29.7663H92.2025V8.18234H97.1685V18.6767L101.852 14.1504H107.92L101.233 20.431L108.429 29.7663ZM108.762 21.647V8.86H114.067V21.5626C114.067 23.9101 115.422 25.0417 117.37 25.0417C119.288 25.0417 120.642 23.8531 120.642 21.5626V8.86H125.977V21.647C125.977 27.8136 121.714 30.1337 117.37 30.1337C113.052 30.1337 108.762 27.8136 108.762 21.647ZM137.767 13.7557C139.997 13.7557 141.804 14.5473 143.242 16.1307C144.681 17.6866 145.386 19.6393 145.386 21.9299C145.386 24.2226 144.653 26.1732 143.215 27.7861C141.774 29.3694 139.969 30.1632 137.796 30.1632C136.073 30.1632 134.578 29.5974 133.365 28.4659V36.1883H128.369V14.1504H133.281V15.5944C134.494 14.3763 135.989 13.7557 137.767 13.7557ZM140.306 21.9869C140.306 19.9497 138.841 18.3938 136.808 18.3938C134.776 18.3938 133.281 19.9497 133.281 21.9869C133.281 22.977 133.618 23.8257 134.268 24.5329C134.944 25.2401 135.791 25.58 136.808 25.58C137.823 25.58 138.67 25.2401 139.319 24.5329C139.966 23.8452 140.321 22.9322 140.309 21.9869H140.306Z"
-                    fill="#000"></path>
-            </svg>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div>
+      <header>
+        <div class="random-shape"></div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="./image.svg/logo.svg" alt="logo" />
+          </a>
         </div>
-        <div>
-            </h1></button><br>
-            <button class="product" name="button">product</button><br>
-            <button class="solution" name="button">solution</button><br>
-            <button class="learn" name="button">learn</button><br>
-            <a href="/pricing">pricing</a><br>
-            <a href="/enterprices">enterprices</a><br>
-            <button class="contact sales" name="button">contact sales</button><br>
-            <button class="sign Up" name="button">sign Up</button><br>
-            <a href="/log in">log in</a><br>
-        </div>
-    </header>
-</div>
-
-<body>
-    <h1 class="Generate Website">Generate Website Wireframes with AI.</h1>
-    <div>
-        <p class="paragraph">Streamline your website design process with ClickUp's AI-powered wireframing tool. Create
-            professional and intuitive website layouts, collaborate with your team, and bring your vision to life with
-            ease.</p>
+        <nav>
+          <ul class="left-menu">
+            <li><a href="#">Product </a></li>
+            <li><a href="#">Solution</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </ul>
+          <ul class="rightmenu">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login in</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
-    <label for="email">enter your label</label>
-    <input type="email" class="enter email" placeholder="enter your email">
-    <br>
-    <h1><button class="get">get started</button></h1>
-    <p class="paragrapl">Free forever.
-        No credit card.</p>
-    <div>
-        <h1 class="Benefitsof">Benefits of Website Wireframe Generator</h1>
-        <p class="paragrapl">Generate professional website wireframes effortlessly with our intuitive wireframe
-            generator:</p>
+    <div class="hero-section">
+      <h1 class="Generate Website">Generate Website Wireframes with AI.</h1>
+      <p class="hero-paragraph">
+        Streamline your website design process with ClickUp's AI-powered
+        wireframing tool. Create professional and intuitive website layouts,
+        collaborate with your team, and bring your vision to life with ease.
+      </p>
+      <input type="email" class="Enter-email" placeholder="enter your email" />
+      <br />
+      <h1><button class="hero-btn">get started</button></h1>
+      <h3 class="paragrapl">Free forever. No credit card.</h3>
+    </div>
 
-        <p class="paragraph"><strong>Save time and effort:</strong>
-            Our wireframe generator allows you to quickly create website mockups without the need for any design or
-            coding skills. Simply drag and drop elements onto the canvas and watch your wireframe come to life. Say
-            goodbye to hours spent manually sketching wireframes and hello to a streamlined process.</p>
-        <p class="paragraph"><strong>Visualize your ideas:</strong>
-            With our wireframe generator, you can easily visualize your website layout and design before diving into the
-            development phase. This allows you to spot any potential issues or improvements early on, saving you time
-            and money in the long run. Get a clear picture of how your website will look and feel, and make informed
-            decisions based on visual representation.</p>
-        <p class="paragraph">
-            <strong>Collaborate seamlessly:</strong> Our wireframe generator is designed to facilitate collaboration
-            among team members. Share your wireframes with colleagues or clients, gather feedback, and make real-time
-            changes together. No more back-and-forth emails or confusing explanations. Collaborate effortlessly and
-            ensure everyone is on the same page, resulting in a more efficient and successful website development
-            process.
-        </p>
-        <p class="paragraph">
-            <strong>Streamline communication:</strong> Communicating your vision for a website can be challenging,
-            especially when working with multiple stakeholders. Our wireframe generator simplifies this process by
-            providing a visual representation of your ideas. Share your wireframes with clients or team members to
-            clearly convey your concepts and ensure everyone is aligned. Say goodbye to miscommunication and hello to
-            effective communication.
-        </p>
-        <p class="paragraph">
-            Get started with our wireframe generator today and experience the benefits of effortless website mockup
-            creation, streamlined collaboration, and improved communication. Your website development process will never
-            be the same!
-        </p>
-    </div>
-    <div>
-        <h1 class="clickai">What is ClickUp AI</h1>
-        <p class="paragraph">Work better and faster using ClickUp AI. Whatever your role or job function, ClickUp AI can
-            transform your productivity!</p>
-        <p class="paragraph">Our research-based tools ensure high-quality content by using prompts tailored to specific
-            roles. You can also use ClickUp AI for everyday tasks like instantly generating a first draft, improving
-            your first draft, or brainstorming.</p>
-        <p class="paragraph">ClickUp AI delivers more than 100 fully-templated prompts that are tailored to you. These
-            role-based AI Tools, such as the Website Wireframe Generator, were uniquely developed in partnership with
-            workplace experts across industries and are easy to utilize for virtually any high-value use case.
-        </p>
-    </div>
-    <div>
-        <p class="paragraph">We have been able to cut in half the time spent on certain workflowsby being able to
-            generate ideas, frameworks, and processes on the fly and right in ClickUp.</p>
-        <span class="nehru">Yvi Heimann</span>
-        <span class="nehrus">Business Efficiency Consultant
-        </span>
-    </div>
-    <div>
-        <p>We have been able to cut in half the time spent on certain workflowsby being able to generate ideas,
-            frameworks, and processes on the fly and right in ClickUp.</p>
+    <div class="features-section">
+      <h1 class="Benefitsof">Benefits of Website Wireframe Generator</h1>
+      <p class="paragrapl">
+        Generate professional website wireframes effortlessly with our intuitive
+        wireframe generator:
+      </p>
 
-        <h3>Yvi Heimann</h3>
-        <p>Business Efficiency Consultant</p>
+      <p class="paragraph">
+        <strong>Save time and effort:</strong> Our wireframe generator allows
+        you to quickly create website mockups without the need for any design or
+        coding skills. Simply drag and drop elements onto the canvas and watch
+        your wireframe come to life. Say goodbye to hours spent manually
+        sketching wireframes and hello to a streamlined process.
+      </p>
+      <p class="paragraph">
+        <strong>Visualize your ideas:</strong> With our wireframe generator, you
+        can easily visualize your website layout and design before diving into
+        the development phase. This allows you to spot any potential issues or
+        improvements early on, saving you time and money in the long run. Get a
+        clear picture of how your website will look and feel, and make informed
+        decisions based on visual representation.
+      </p>
+      <p class="paragraph">
+        <strong>Collaborate seamlessly:</strong> Our wireframe generator is
+        designed to facilitate collaboration among team members. Share your
+        wireframes with colleagues or clients, gather feedback, and make
+        real-time changes together. No more back-and-forth emails or confusing
+        explanations. Collaborate effortlessly and ensure everyone is on the
+        same page, resulting in a more efficient and successful website
+        development process.
+      </p>
+      <p class="paragraph">
+        <strong>Streamline communication:</strong> Communicating your vision for
+        a website can be challenging, especially when working with multiple
+        stakeholders. Our wireframe generator simplifies this process by
+        providing a visual representation of your ideas. Share your wireframes
+        with clients or team members to clearly convey your concepts and ensure
+        everyone is aligned. Say goodbye to miscommunication and hello to
+        effective communication.
+      </p>
+      <p class="paragraph">
+        Get started with our wireframe generator today and experience the
+        benefits of effortless website mockup creation, streamlined
+        collaboration, and improved communication. Your website development
+        process will never be the same!
+      </p>
     </div>
-    <div>
-        <h2>3 Examples of the Website Wireframe Generator in Action</h2>
-        <h3>Web Design Agency</h3>
-        <p>As a web design agency, you will appreciate the convenience and efficiency of the Website Wireframe
-            Generator. By using this tool, you can quickly create wireframes for your clients, allowing you to present a
-            visual representation of their website before diving into the development process. With its intuitive
-            interface and drag-and-drop functionality, you can easily mock up layouts, experiment with different design
-            elements, and collaborate with your team in real-time. This tool will help you streamline your workflow,
-            save time, and deliver outstanding results to your clients.</p>
-        <h3>Freelance Web Developer</h3>
-        <p>As a freelance web developer, the Website Wireframe Generator will become an indispensable part of your
-            toolkit. This powerful tool allows you to rapidly prototype and iterate on website layouts, making it easier
-            for you to communicate your ideas to clients and stakeholders. With its extensive library of pre-designed
-            elements and easy customization options, you can create wireframes that accurately reflect your vision.
-            Whether you're working on a personal project or collaborating with other freelancers, this tool will boost
-            your productivity and enable you to deliver high-quality websites.</p>
-        <h3>Marketing Team</h3>
-        <p>As a marketing team, the Website Wireframe Generator will revolutionize your campaign planning and execution.
-            With this tool, you can visually map out landing pages, email templates, and other digital assets, ensuring
-            that every element is strategically placed for maximum impact. By creating wireframes, you can easily test
-            different layouts, messaging, and user flows, allowing you to optimize your marketing efforts. With its
-            seamless sharing and collaboration features, you can gather feedback from stakeholders, iterate on designs,
-            and align your entire team towards a unified vision. This tool will empower your marketing team to create
-            compelling online experiences that drive conversions and deliver results.</p>
+    <div class="container-Section">
+      <h1 class="clickai">What is ClickUp AI</h1>
+      <p class="paragraph">
+        Work better and faster using ClickUp AI. Whatever your role or job
+        function, ClickUp AI can transform your productivity!
+      </p>
+      <p class="paragraph">
+        Our research-based tools ensure high-quality content by using prompts
+        tailored to specific roles. You can also use ClickUp AI for everyday
+        tasks like instantly generating a first draft, improving your first
+        draft, or brainstorming.
+      </p>
+      <p class="paragraph">
+        ClickUp AI delivers more than 100 fully-templated prompts that are
+        tailored to you. These role-based AI Tools, such as the Website
+        Wireframe Generator, were uniquely developed in partnership with
+        workplace experts across industries and are easy to utilize for
+        virtually any high-value use case.
+      </p>
     </div>
-    <div>
-        <h2>Website Wireframe FAQs</h2>
-        <h4>What are the key considerations when creating a website wireframe?</h4>
-        <p>When creating a website wireframe, it is important to consider the overall layout and structure of your
-            website. This includes determining the placement of key elements such as navigation menus, content sections,
-            and call-to-action buttons. Additionally, think about the user experience and ensure that the wireframe
-            effectively communicates the flow and functionality of the website.</p>
+    <div class="review--">
+      <div class="profile">
+        <img src="" alt="profile-image" />
+
+        <span class="profile-name">Yvi Heimann</span>
+        <span class="text-1">Business Efficiency Consultant </span>
+      </div>
+      <p class="paragraph">
+        We have been able to cut in half the time spent on certain workflowsby
+        being able to generate ideas, frameworks, and processes on the fly and
+        right in ClickUp.
+      </p>
     </div>
-    <div>
-        <h4>How can I ensure my website wireframe caters to the user experience?</h4>
-        <p>To ensure your website wireframe caters to the user experience, consider the following tips: 1) Prioritize
-            clear and intuitive navigation, making it easy for users to find what they need. 2) Incorporate
-            user-friendly features, such as responsive design and interactive elements, to enhance engagement. 3)
-            Conduct user testing and gather feedback to identify any pain points and make necessary improvements.</p>
+    <div class="Section-feature">
+      <h2>3 Examples of the Website Wireframe Generator in Action</h2>
+      <h3>Web Design Agency</h3>
+      <p>
+        As a web design agency, you will appreciate the convenience and
+        efficiency of the Website Wireframe Generator. By using this tool, you
+        can quickly create wireframes for your clients, allowing you to present
+        a visual representation of their website before diving into the
+        development process. With its intuitive interface and drag-and-drop
+        functionality, you can easily mock up layouts, experiment with different
+        design elements, and collaborate with your team in real-time. This tool
+        will help you streamline your workflow, save time, and deliver
+        outstanding results to your clients.
+      </p>
+      <h3>Freelance Web Developer</h3>
+      <p>
+        As a freelance web developer, the Website Wireframe Generator will
+        become an indispensable part of your toolkit. This powerful tool allows
+        you to rapidly prototype and iterate on website layouts, making it
+        easier for you to communicate your ideas to clients and stakeholders.
+        With its extensive library of pre-designed elements and easy
+        customization options, you can create wireframes that accurately reflect
+        your vision. Whether you're working on a personal project or
+        collaborating with other freelancers, this tool will boost your
+        productivity and enable you to deliver high-quality websites.
+      </p>
+      <h3>Marketing Team</h3>
+      <p>
+        As a marketing team, the Website Wireframe Generator will revolutionize
+        your campaign planning and execution. With this tool, you can visually
+        map out landing pages, email templates, and other digital assets,
+        ensuring that every element is strategically placed for maximum impact.
+        By creating wireframes, you can easily test different layouts,
+        messaging, and user flows, allowing you to optimize your marketing
+        efforts. With its seamless sharing and collaboration features, you can
+        gather feedback from stakeholders, iterate on designs, and align your
+        entire team towards a unified vision. This tool will empower your
+        marketing team to create compelling online experiences that drive
+        conversions and deliver results.
+      </p>
     </div>
-    <div>
-        <h4>Where can I find experts to review my website wireframe and provide feedback?</h4>
-        <p>There are several online platforms where you can find experts to review your website wireframe and provide
-            valuable feedback. Freelance websites like Upwork and Fiverr have a wide range of experienced designers and
-            developers who offer wireframe review services. You can also join web design communities and forums, such as
-            Dribbble and Reddit, where professionals are often willing to provide feedback and suggestions on your
-            wireframe.</p>
+    <div class="FAQ-Section">
+      <h2>Website Wireframe FAQs</h2>
+      <div class="sec1">
+        <h4>
+          What are the key considerations when creating a website wireframe?
+        </h4>
+        <p>
+          When creating a website wireframe, it is important to consider the
+          overall layout and structure of your website. This includes
+          determining the placement of key elements such as navigation menus,
+          content sections, and call-to-action buttons. Additionally, think
+          about the user experience and ensure that the wireframe effectively
+          communicates the flow and functionality of the website.
+        </p>
+      </div>
+      <div class="sec2">
+        <h4>
+          How can I ensure my website wireframe caters to the user experience?
+        </h4>
+        <p>
+          To ensure your website wireframe caters to the user experience,
+          consider the following tips: 1 Prioritize clear and intuitive
+          navigation, making it easy for users to find what they need. 2
+          Incorporate user-friendly features, such as responsive design and
+          interactive elements, to enhance engagement. 3 Conduct user testing
+          and gather feedback to identify any pain points and make necessary
+          improvements.
+        </p>
+      </div>
+      <div class="sec3">
+        <h4>
+          Where can I find experts to review my website wireframe and provide
+          feedback?
+        </h4>
+        <p>
+          There are several online platforms where you can find experts to
+          review your website wireframe and provide valuable feedback. Freelance
+          websites like Upwork and Fiverr have a wide range of experienced
+          designers and developers who offer wireframe review services. You can
+          also join web design communities and forums, such as Dribbble and
+          Reddit, where professionals are often willing to provide feedback and
+          suggestions on your wireframe.
+        </p>
+      </div>
     </div>
-    <h2>Why ClickUp AI</h2>
-    <div>
+    <div class="comaparison-table">
+      <h2>Why ClickUp AI</h2>
+      <div>
         <table>
-            <thead>
-                <tr>
-                    <th>ClickUp AI</th>
-                    <th>Monday.com</th>
-                    <th>Asana</th>
-                    <th>Notion AI</th>
-                    <th>ChatGPT+</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Elevate your writing</td>
-                </tr>
-                <tr>
-                    <td>Summarize tasks, threads, & content</td>
-                </tr>
-                <tr>
-                    <td>Built for business teams</td>
-                </tr>
-                <tr>
-                    <td>Subtask generation</td>
-                </tr>
-                <tr>
-                    <td>Pre-built AI tools for your department</td>
-                </tr>
-                <tr>
-                    <td>Access AI everywhere</td>
-                </tr>
-                <tr>
-                    <td>Available on the go</td>
-                </tr>
-                <tr>
-                    <td>Monthly price per member</td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th>ClickUp AI</th>
+              <th>Monday.com</th>
+              <th>Asana</th>
+              <th>Notion AI</th>
+              <th>ChatGPT+</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Elevate your writing</td>
+            </tr>
+            <tr>
+              <td>Summarize tasks, threads, & content</td>
+            </tr>
+            <tr>
+              <td>Built for business teams</td>
+            </tr>
+            <tr>
+              <td>Subtask generation</td>
+            </tr>
+            <tr>
+              <td>Pre-built AI tools for your department</td>
+            </tr>
+            <tr>
+              <td>Access AI everywhere</td>
+            </tr>
+            <tr>
+              <td>Available on the go</td>
+            </tr>
+            <tr>
+              <td>Monthly price per member</td>
+            </tr>
+          </tbody>
         </table>
+      </div>
     </div>
-    <div>
-        <p>Resources</p>
-        <h2>Learn more from the ClickUp Blog.</h2>
-    </div>
-    <div>
-        <img src="https://clickup.com/blog/wp-content/uploads/2023/06/ClickUp-AI-for-Sales-and-Marketing-Blog-Feature-1400x1050.png "
-            width="380" alt="error">
-    </div>
-    <div>
-        <h3>Unlocking the Potential of ClickUp AI for Marketing, Content, and Sales Teams</h3>
-    </div>
-    <div>
-        <img src="https://clickup.com/blog/wp-content/uploads/2023/06/Willy-Thomas-Bio-Image-150x150.jpeg" height="40"
-            alt="error">
-    </div>
-    <div>
-        <h3>Willy Thomas</h3>
-        <h6>Senior Product Marketing Manager</h6>
-    </div>
-    <div>
-        <img src="https://clickup.com/blog/wp-content/uploads/2022/11/Automation-Examples-in-ClickUp-feature-image-in-ClickUp-blog.png"
-            height="252" width="380" alt="error">
-    </div>
-    <div>
-        <h3>Guide to Automations in ClickUp (With 10 Use Case Examples)</h3>
-    </div>
-    <div>
-        <img src="https://clickup.com/blog/wp-content/uploads/2022/05/Alex-York-Bio-Round-300x297.png" height="40"
-            width="40" alt="error">
-        <h3>Alex York</h3>
-        <h6>Senior Content Marketing Manager</h6>
-    </div>
-    <div>
-        <img src="https://clickup.com/blog/wp-content/uploads/2023/03/workflow-automation-feature-image.png" width="380"
-            alt="error">
-        <h3>Workflow Automation: Automate Workflows to Boost Productivity</h3>
-    </div>
-    <div>
-        <img src="https://clickup.com/blog/wp-content/uploads/2022/11/sofia-azevedo-150x150.jpg" height="40" width="40"
-            alt="error">
-        <h6>Sofia Azevedo</h6>
-    </div>
-    <div>
-        <b><a href="/free training">Free training</a></b>
-        "&"
-        <a href="/24-hours support">24-hours support</a>
-    </div>
-    <div>
-        <p>
-            "Serious about"
-            <b><a href="/security & privacy">security & privacy</a></b>
-        </p>
-    </div>
-    <div>
-        <p>
-            <b><a href="/Highest levels of uptime">Highest levels of uptime</a></b>
-            "the last year"
-        </p>
-    </div>
-    <div>
-        <ul class="CuBottomNavigation_columnList__D7vJc">
-            <li ><a href="https://clickup.com/download">Download</a></li>
-            <li ><a  href="https://clickup.com/careers">Careers</a></li>
-            <li><a href="https://clickup.com/about">About Us</a></li>
-            <li><a href="https://dev-doc.clickup.com/p/ad-3021/click-up-roadmap/ad-3021/%F0%9F%9A%80-click-up-roadmap">Product
-                    Roadmap</a></li>
-            <li ><a href="https://clickup.com/press">Press</a></li>
-            <li ><a  href="https://clickup.com/customers">Clients</a></li>
-            <li ><a href="https://clickup.com/brand">Brand</a></li>
-            <li ><a  href="https://clickup.com/community">Community</a></li>
-            <li ><a href="https://clickup.com/partners/affiliates">Affiliate &amp; Referrals</a></li>
-            <li ><a  href="https://clickup.com/reviews">Reviews</a></li>
-            <li ><a  href="https://status.clickup.com/">Status</a></li>
-        </ul>
-    </div>
-    <div>
-        <li class="CuBottomNavigation_column___vzji">
-            <div class="CuBottomNavigation_columnTitle__7AtFy">Resources</div>
-            <ul class="CuBottomNavigation_columnList__D7vJc">
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Help Docs" href="https://docs.clickup.com/en/">Help Docs</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Coaching" href="https://clickup.com/coaching">Coaching</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="On-Demand Demo" href="https://clickup.com/on-demand-demo">On-Demand
-                        Demo</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Webinars" href="https://clickup.com/webinars">Webinars</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Contact Us" href="https://help.clickup.com/">Contact Us</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Templates" href="https://clickup.com/templates">Templates</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Integrations"
-                        href="https://clickup.com/integrations">Integrations</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Import" href="https://clickup.com/import">Import</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="API" href="https://clickup.com/api">API</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Consultants" href="https://clickup.com/consultants">Consultants</a>
-                </li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Partners" href="https://clickup.com/partners">Partners</a></li>
-            </ul>
-        </li>
-    </div>
-    <div>
-        <li class="CuBottomNavigation_column___vzji">
-            <div class="CuBottomNavigation_columnTitle__7AtFy"><a data-testid="cu-link"
-                    class="CuLink_link__x0qqd CuBottomNavigation_columnTitleLink__YGIf9" rel="" target=""
-                    href="https://clickup.com/features">Features</a></div>
-            <ul class="CuBottomNavigation_columnList__D7vJc">
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Gantt Chart"
-                        href="https://clickup.com/features/gantt-chart-view">Gantt Chart</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Dashboards"
-                        href="https://clickup.com/features/dashboards">Dashboards</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Native Time Tracking"
-                        href="https://clickup.com/features/project-time-tracking">Native Time Tracking</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Mind Maps" href="https://clickup.com/features/mind-maps">Mind
-                        Maps</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Automations"
-                        href="https://clickup.com/features/automations">Automations</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Notepad" href="https://clickup.com/features/notepad">Notepad</a>
-                </li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Forms" href="https://clickup.com/features/form-view">Forms</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Email"
-                        href="https://clickup.com/features/email-project-management">Email</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="To-Do List" href="https://clickup.com/online-to-do-list">To-Do
-                        List</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Kanban Board"
-                        href="https://clickup.com/features/kanban-board">Kanban Board</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Sprints" href="https://clickup.com/features/sprints">Sprints</a>
-                </li>
-            </ul>
-        </li>
-    </div>
-    <div>
-        <li class="CuBottomNavigation_column___vzji">
-            <div class="CuBottomNavigation_columnTitle__7AtFy"><a data-testid="cu-link"
-                    class="CuLink_link__x0qqd CuBottomNavigation_columnTitleLink__YGIf9" rel="" target=""
-                    href="https://clickup.com/compare">Compare</a></div>
-            <ul class="CuBottomNavigation_columnList__D7vJc">
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Monday" href="https://clickup.com/compare/monday-alternative">vs
-                        Monday</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Asana" href="https://clickup.com/compare/asana-alternative">vs
-                        Asana</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Jira" href="https://clickup.com/compare/jira-alternative">vs
-                        Jira</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Trello" href="https://clickup.com/compare/trello-alternative">vs
-                        Trello</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Airtable"
-                        href="https://clickup.com/compare/airtable-alternative">vs Airtable</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Notion" href="https://clickup.com/compare/notion-alternative">vs
-                        Notion</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Basecamp"
-                        href="https://clickup.com/compare/basecamp-alternative">vs Basecamp</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Wrike" href="https://clickup.com/compare/wrike-alternatives">vs
-                        Wrike</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs MS Project"
-                        href="https://clickup.com/compare/microsoft-project-alternative">vs MS Project</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Todoist"
-                        href="https://clickup.com/compare/todoist-alternative">vs Todoist</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="vs Smartsheet"
-                        href="https://clickup.com/compare/smartsheet-alternative">vs Smartsheet</a></li>
-            </ul>
-        </li>
-    </div>
-    <div>
-        <li class="CuBottomNavigation_column___vzji">
-            <div class="CuBottomNavigation_columnTitle__7AtFy">Learn</div>
-            <ul class="CuBottomNavigation_columnList__D7vJc">
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Blog" href="https://clickup.com/blog">Blog</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Software Team Hub"
-                        href="https://clickup.com/resources/software-teams">Software Team Hub</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Agency Hub" href="https://clickup.com/agency-resources">Agency
-                        Hub</a></li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Newsletter" href="https://clickup.com/newsletter-1">Newsletter</a>
-                </li>
-                <li class="CuBottomNavigation_columnListItem__he_3n"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM" rel="" target=""
-                        data-segment-button-clicked="Podcast" href="https://clickup.com/when-it-clicked">Podcast</a>
-                </li>
-            </ul>
-            <div class="CuBottomNavigation_socialFollowContainer__DqAi4">
-                <div class="CuBottomNavigation_columnTitle__7AtFy">Connect</div>
-                <div class="CuBottomNavigation_socialFollow__oC4JS row align-center"><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuLink_underline__f9pW8 CuBottomNavigation_iconLink__B5gWN"
-                        rel="noopener noreferrer" target="_blank" data-segment-button-clicked="LinkedIn"
-                        href="https://www.linkedin.com/company/12949663"><svg width="26" height="26" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class="CuBottomNavigation_icon__cWvw7"
-                            aria-label="Follow ClickUp on LinkedIn">
-                            <rect x="0.2" y="0.061" width="25" height="25" rx="5.714" fill="var(--color-icon, #0D1530)">
-                            </rect>
-                            <path
-                                d="M8.699 9.88H5.68a.242.242 0 0 0-.243.242v9.696c0 .133.109.242.243.242h3.018a.242.242 0 0 0 .242-.242v-9.696a.242.242 0 0 0-.24-.242zM7.192 5.06A1.993 1.993 0 0 0 5.2 7.05c0 1.097.893 1.99 1.992 1.99 1.097 0 1.99-.893 1.99-1.99s-.893-1.99-1.99-1.99zm9.184 4.58c-1.212 0-2.108.52-2.652 1.113v-.63a.242.242 0 0 0-.242-.242h-2.89a.242.242 0 0 0-.243.242v9.695c0 .134.108.243.242.243h3.012a.242.242 0 0 0 .242-.243v-4.797c0-1.616.44-2.246 1.566-2.246 1.227 0 1.325 1.01 1.325 2.33v4.713c0 .134.108.243.242.243h3.013a.242.242 0 0 0 .242-.243V14.5c0-2.403-.458-4.86-3.857-4.86z"
-                                fill="#fff"></path>
-                        </svg></a><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuLink_underline__f9pW8 CuBottomNavigation_iconLink__B5gWN"
-                        rel="noopener noreferrer" target="_blank" data-segment-button-clicked="Facebook"
-                        href="https://www.facebook.com/clickupprojectmanagement/"><svg width="26" height="26"
-                            fill="none" xmlns="http://www.w3.org/2000/svg" class="CuBottomNavigation_icon__cWvw7"
-                            aria-label="Follow ClickUp on Facebook">
-                            <rect x="0.2" y="0.061" width="25" height="25" rx="5.714" fill="var(--color-icon, #0D1530)">
-                            </rect>
-                            <path
-                                d="M10.854 13.527H8.939c-.309 0-.406-.112-.406-.394v-2.271c0-.3.116-.395.406-.395h1.915V8.815c0-.75.135-1.464.522-2.121.406-.676.986-1.127 1.72-1.39a4.418 4.418 0 0 1 1.49-.243h1.894c.27 0 .387.112.387.375v2.14c0 .263-.116.376-.387.376-.522 0-1.044 0-1.566.018-.522 0-.793.244-.793.77-.02.563 0 1.108 0 1.69h2.243c.31 0 .425.112.425.413v2.271c0 .3-.096.395-.425.395h-2.243v6.12c0 .319-.096.431-.444.431H11.26c-.29 0-.406-.112-.406-.394v-6.139z"
-                                fill="#fff"></path>
-                        </svg></a><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuLink_underline__f9pW8 CuBottomNavigation_iconLink__B5gWN"
-                        rel="noopener noreferrer" target="_blank" data-segment-button-clicked="Instagram"
-                        href="https://www.instagram.com/clickup/"><svg width="26" height="26" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class="CuBottomNavigation_icon__cWvw7"
-                            aria-label="Follow ClickUp on Instagram">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M17.854.14c-2.3-.108-7.997-.103-10.299 0C5.533.233 3.748.721 2.31 2.16.158 4.313.178 7.134.206 11.107c.003.467.007.95.007 1.45 0 .467-.003.919-.005 1.356C.185 18.019.17 20.81 2.31 22.95c2.155 2.155 5.006 2.133 8.935 2.104.47-.003.957-.007 1.46-.007h.067c4.764 0 6.42 0 8.114-.656 2.316-.9 4.064-2.969 4.235-6.687.108-2.3.102-7.996 0-10.298-.206-4.389-2.562-7.05-7.267-7.267zm3.774 5.873a1.786 1.786 0 1 1-3.571 0 1.786 1.786 0 0 1 3.571 0zM12.7 17.322a4.762 4.762 0 1 0 0-9.524 4.762 4.762 0 0 0 0 9.524z"
-                                fill="var(--color-icon, #0D1530)"></path>
-                        </svg></a><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd CuLink_underline__f9pW8 CuBottomNavigation_iconLink__B5gWN"
-                        rel="noopener noreferrer" target="_blank" data-segment-button-clicked="Twitter"
-                        href="https://twitter.com/clickup"><svg width="26" height="26" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class="CuBottomNavigation_icon__cWvw7"
-                            aria-label="Follow ClickUp on Twitter">
-                            <rect x="0.2" y="0.06" width="25" height="25" rx="5.714" fill="var(--color-icon, #0D1530)">
-                            </rect>
-                            <path
-                                d="m14.132 11.411 5.587-6.351h-1.324l-4.852 5.515L9.67 5.06H5.2l5.86 8.34-5.86 6.66h1.325l5.123-5.824 4.092 5.824h4.469l-6.079-8.65zm-1.814 2.062-.594-.83-4.723-6.609h2.033l3.812 5.333.594.83 4.955 6.932h-2.033l-4.044-5.656z"
-                                fill="#fff"></path>
-                        </svg></a></div>
-            </div>
-        </li>
-    </div>
-    <div>
-        <footer data-testid="footer" class="CuFooter_wrapper__7dR2h" id="footer">
-            <div class="row justify-between align-center CuFooter_container__s2XHr">
-                <div class="CuFooter_appStore__NcUnf"><a data-testid="cu-link" class="CuLink_link__x0qqd"
-                        rel="noopener noreferrer" target="_blank" data-segment-button-clicked="Apple App Store"
-                        href="https://apps.apple.com/us/app/clickup-manage-teams-tasks/id1535098836">
-                        <div class="CuFooter_appStoreBadgeImage__126HY" data-testid="cu-media-element">
-                            <picture class="" data-testid="cu-image"><img
-                                    src="/assets/badges/v3/app-store-badge-black.svg" height="42" width="124"
-                                    alt="Apple App Store" loading="lazy" decoding="async"
-                                    sizes="(max-width: 900px) 100vw, 50vw"></picture>
-                        </div>
-                    </a><a data-testid="cu-link" class="CuLink_link__x0qqd" rel="noopener noreferrer" target="_blank"
-                        data-segment-button-clicked="Google Play Store"
-                        href="https://play.google.com/store/apps/details?id=co.mangotechnologies.clickup">
-                        <div class="CuFooter_appStoreBadgeImage__126HY" data-testid="cu-media-element">
-                            <picture class="" data-testid="cu-image"><img
-                                    src="/assets/badges/v3/google-play-badge-black.svg" height="42" width="124"
-                                    alt="Google Play Store" loading="lazy" decoding="async"
-                                    sizes="(max-width: 900px) 100vw, 50vw"></picture>
-                        </div>
-                    </a><a data-testid="cu-link" class="CuLink_link__x0qqd" rel="" target=""
-                        data-segment-button-clicked="Mac App Store" href="https://desktop.clickup.com/mac">
-                        <div class="CuFooter_appStoreBadgeImage__126HY" data-testid="cu-media-element">
-                            <picture class="" data-testid="cu-image"><img
-                                    src="/assets/badges/v3/app-store-mac-badge-black.svg" height="42" width="124"
-                                    alt="Mac App Store" loading="lazy" decoding="async"
-                                    sizes="(max-width: 900px) 100vw, 50vw"></picture>
-                        </div>
-                    </a><a data-testid="cu-link" class="CuLink_link__x0qqd" rel="" target=""
-                        data-segment-button-clicked="Microsoft App Store" href="https://desktop.clickup.com/windows">
-                        <div class="CuFooter_appStoreBadgeImage__126HY" data-testid="cu-media-element">
-                            <picture class="" data-testid="cu-image"><img
-                                    src="/assets/badges/v3/app-store-microsoft-badge-black.svg" height="42" width="124"
-                                    alt="Microsoft App Store" loading="lazy" decoding="async"
-                                    sizes="(max-width: 900px) 100vw, 50vw"></picture>
-                        </div>
-                    </a></div>
-                <div class="row CuFooter_copyright__05Xv9"><span>© 2024 ClickUp</span><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd" rel="" target="" data-segment-button-clicked="Security"
-                        href="https://clickup.com/terms/security-policy">Security</a><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd" rel="" target="" data-segment-button-clicked="Privacy"
-                        href="https://clickup.com/terms/privacy">Privacy</a><a data-testid="cu-link"
-                        class="CuLink_link__x0qqd" rel="" target="" data-segment-button-clicked="Terms"
-                        href="https://clickup.com/terms">Terms</a></div>
-            </div>
-        </footer>
-    </div>
-</body>
 
+    <div class="grid-container">
+      <h6>Resources</h6>
+      <h2>Learn more from the ClickUp Blog.</h2>
+      <div class="grid">
+        <img
+          src="https://clickup.com/blog/wp-content/uploads/2023/06/ClickUp-AI-for-Sales-and-Marketing-Blog-Feature-1400x1050.png "
+          width="380"
+          alt="error"
+        />
+        <h3>
+          Unlocking the Potential of ClickUp AI for Marketing, Content, and
+          Sales Teams
+        </h3>
+        <div>
+          <img
+            src="https://clickup.com/blog/wp-content/uploads/2023/06/Willy-Thomas-Bio-Image-150x150.jpeg"
+            height="40"
+            alt="error"
+          />
+        </div>
+      </div>
+    </div>
+    <div></div>
+
+    <div>
+      <h3>Willy Thomas</h3>
+      <h6>Senior Product Marketing Manager</h6>
+    </div>
+    <div>
+      <img
+        src="https://clickup.com/blog/wp-content/uploads/2022/11/Automation-Examples-in-ClickUp-feature-image-in-ClickUp-blog.png"
+        height="252"
+        width="380"
+        alt="error"
+      />
+    </div>
+    <div>
+      <h3>Guide to Automations in ClickUp (With 10 Use Case Examples)</h3>
+    </div>
+    <div>
+      <img
+        src="https://clickup.com/blog/wp-content/uploads/2022/05/Alex-York-Bio-Round-300x297.png"
+        height="40"
+        width="40"
+        alt="error"
+      />
+      <h3>Alex York</h3>
+      <h6>Senior Content Marketing Manager</h6>
+    </div>
+    <div>
+      <img
+        src="https://clickup.com/blog/wp-content/uploads/2023/03/workflow-automation-feature-image.png"
+        width="380"
+        alt="error"
+      />
+      <h3>Workflow Automation: Automate Workflows to Boost Productivity</h3>
+    </div>
+    <div>
+      <img
+        src="https://clickup.com/blog/wp-content/uploads/2022/11/sofia-azevedo-150x150.jpg"
+        height="40"
+        width="40"
+        alt="error"
+      />
+      <h6>Sofia Azevedo</h6>
+    </div>
+    <div>
+      <b><a href="/free training">Free training</a></b>
+      "&"
+      <a href="/24-hours support">24-hours support</a>
+    </div>
+    <div>
+      <p>
+        "Serious about"
+        <b><a href="/security & privacy">security & privacy</a></b>
+      </p>
+    </div>
+    <div>
+      <p>
+        <b><a href="/Highest levels of uptime">Highest levels of uptime</a></b>
+        "the last year"
+      </p>
+    </div>
+    <div>
+      <ul class="CuBottomNavigation_columnList__D7vJc">
+        <li><a href="https://clickup.com/download">Download</a></li>
+        <li><a href="https://clickup.com/careers">Careers</a></li>
+        <li><a href="https://clickup.com/about">About Us</a></li>
+        <li>
+          <a
+            href="https://dev-doc.clickup.com/p/ad-3021/click-up-roadmap/ad-3021/%F0%9F%9A%80-click-up-roadmap"
+            >Product Roadmap</a
+          >
+        </li>
+        <li><a href="https://clickup.com/press">Press</a></li>
+        <li><a href="https://clickup.com/customers">Clients</a></li>
+        <li><a href="https://clickup.com/brand">Brand</a></li>
+        <li><a href="https://clickup.com/community">Community</a></li>
+        <li>
+          <a href="https://clickup.com/partners/affiliates"
+            >Affiliate &amp; Referrals</a
+          >
+        </li>
+        <li><a href="https://clickup.com/reviews">Reviews</a></li>
+        <li><a href="https://status.clickup.com/">Status</a></li>
+      </ul>
+    </div>
+    <div>
+      <li class="CuBottomNavigation_column___vzji">
+        <div class="CuBottomNavigation_columnTitle__7AtFy">Resources</div>
+        <ul class="CuBottomNavigation_columnList__D7vJc">
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Help Docs"
+              href="https://docs.clickup.com/en/"
+              >Help Docs</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Coaching"
+              href="https://clickup.com/coaching"
+              >Coaching</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="On-Demand Demo"
+              href="https://clickup.com/on-demand-demo"
+              >On-Demand Demo</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Webinars"
+              href="https://clickup.com/webinars"
+              >Webinars</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Contact Us"
+              href="https://help.clickup.com/"
+              >Contact Us</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Templates"
+              href="https://clickup.com/templates"
+              >Templates</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Integrations"
+              href="https://clickup.com/integrations"
+              >Integrations</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Import"
+              href="https://clickup.com/import"
+              >Import</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="API"
+              href="https://clickup.com/api"
+              >API</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Consultants"
+              href="https://clickup.com/consultants"
+              >Consultants</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Partners"
+              href="https://clickup.com/partners"
+              >Partners</a
+            >
+          </li>
+        </ul>
+      </li>
+    </div>
+    <div>
+      <li class="CuBottomNavigation_column___vzji">
+        <div class="CuBottomNavigation_columnTitle__7AtFy">
+          <a
+            data-testid="cu-link"
+            class="CuLink_link__x0qqd CuBottomNavigation_columnTitleLink__YGIf9"
+            rel=""
+            target=""
+            href="https://clickup.com/features"
+            >Features</a
+          >
+        </div>
+        <ul class="CuBottomNavigation_columnList__D7vJc">
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Gantt Chart"
+              href="https://clickup.com/features/gantt-chart-view"
+              >Gantt Chart</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Dashboards"
+              href="https://clickup.com/features/dashboards"
+              >Dashboards</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Native Time Tracking"
+              href="https://clickup.com/features/project-time-tracking"
+              >Native Time Tracking</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Mind Maps"
+              href="https://clickup.com/features/mind-maps"
+              >Mind Maps</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Automations"
+              href="https://clickup.com/features/automations"
+              >Automations</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Notepad"
+              href="https://clickup.com/features/notepad"
+              >Notepad</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Forms"
+              href="https://clickup.com/features/form-view"
+              >Forms</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Email"
+              href="https://clickup.com/features/email-project-management"
+              >Email</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="To-Do List"
+              href="https://clickup.com/online-to-do-list"
+              >To-Do List</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Kanban Board"
+              href="https://clickup.com/features/kanban-board"
+              >Kanban Board</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Sprints"
+              href="https://clickup.com/features/sprints"
+              >Sprints</a
+            >
+          </li>
+        </ul>
+      </li>
+    </div>
+    <div>
+      <li class="CuBottomNavigation_column___vzji">
+        <div class="CuBottomNavigation_columnTitle__7AtFy">
+          <a
+            data-testid="cu-link"
+            class="CuLink_link__x0qqd CuBottomNavigation_columnTitleLink__YGIf9"
+            rel=""
+            target=""
+            href="https://clickup.com/compare"
+            >Compare</a
+          >
+        </div>
+        <ul class="CuBottomNavigation_columnList__D7vJc">
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Monday"
+              href="https://clickup.com/compare/monday-alternative"
+              >vs Monday</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Asana"
+              href="https://clickup.com/compare/asana-alternative"
+              >vs Asana</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Jira"
+              href="https://clickup.com/compare/jira-alternative"
+              >vs Jira</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Trello"
+              href="https://clickup.com/compare/trello-alternative"
+              >vs Trello</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Airtable"
+              href="https://clickup.com/compare/airtable-alternative"
+              >vs Airtable</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Notion"
+              href="https://clickup.com/compare/notion-alternative"
+              >vs Notion</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Basecamp"
+              href="https://clickup.com/compare/basecamp-alternative"
+              >vs Basecamp</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Wrike"
+              href="https://clickup.com/compare/wrike-alternatives"
+              >vs Wrike</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs MS Project"
+              href="https://clickup.com/compare/microsoft-project-alternative"
+              >vs MS Project</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Todoist"
+              href="https://clickup.com/compare/todoist-alternative"
+              >vs Todoist</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="vs Smartsheet"
+              href="https://clickup.com/compare/smartsheet-alternative"
+              >vs Smartsheet</a
+            >
+          </li>
+        </ul>
+      </li>
+    </div>
+    <div>
+      <li class="CuBottomNavigation_column___vzji">
+        <div class="CuBottomNavigation_columnTitle__7AtFy">Learn</div>
+        <ul class="CuBottomNavigation_columnList__D7vJc">
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Blog"
+              href="https://clickup.com/blog"
+              >Blog</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Software Team Hub"
+              href="https://clickup.com/resources/software-teams"
+              >Software Team Hub</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Agency Hub"
+              href="https://clickup.com/agency-resources"
+              >Agency Hub</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Newsletter"
+              href="https://clickup.com/newsletter-1"
+              >Newsletter</a
+            >
+          </li>
+          <li class="CuBottomNavigation_columnListItem__he_3n">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuBottomNavigation_columnListLink__qq1YM"
+              rel=""
+              target=""
+              data-segment-button-clicked="Podcast"
+              href="https://clickup.com/when-it-clicked"
+              >Podcast</a
+            >
+          </li>
+        </ul>
+        <div class="CuBottomNavigation_socialFollowContainer__DqAi4">
+          <div class="CuBottomNavigation_columnTitle__7AtFy">Connect</div>
+          <div class="CuBottomNavigation_socialFollow__oC4JS row align-center">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuLink_underline__f9pW8 CuBottomNavigation_iconLink__B5gWN"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-segment-button-clicked="LinkedIn"
+              href="https://www.linkedin.com/company/12949663"
+              ><svg
+                width="26"
+                height="26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="CuBottomNavigation_icon__cWvw7"
+                aria-label="Follow ClickUp on LinkedIn"
+              >
+                <rect
+                  x="0.2"
+                  y="0.061"
+                  width="25"
+                  height="25"
+                  rx="5.714"
+                  fill="var(--color-icon, #0D1530)"
+                ></rect>
+                <path
+                  d="M8.699 9.88H5.68a.242.242 0 0 0-.243.242v9.696c0 .133.109.242.243.242h3.018a.242.242 0 0 0 .242-.242v-9.696a.242.242 0 0 0-.24-.242zM7.192 5.06A1.993 1.993 0 0 0 5.2 7.05c0 1.097.893 1.99 1.992 1.99 1.097 0 1.99-.893 1.99-1.99s-.893-1.99-1.99-1.99zm9.184 4.58c-1.212 0-2.108.52-2.652 1.113v-.63a.242.242 0 0 0-.242-.242h-2.89a.242.242 0 0 0-.243.242v9.695c0 .134.108.243.242.243h3.012a.242.242 0 0 0 .242-.243v-4.797c0-1.616.44-2.246 1.566-2.246 1.227 0 1.325 1.01 1.325 2.33v4.713c0 .134.108.243.242.243h3.013a.242.242 0 0 0 .242-.243V14.5c0-2.403-.458-4.86-3.857-4.86z"
+                  fill="#fff"
+                ></path></svg></a
+            ><a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuLink_underline__f9pW8 CuBottomNavigation_iconLink__B5gWN"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-segment-button-clicked="Facebook"
+              href="https://www.facebook.com/clickupprojectmanagement/"
+              ><svg
+                width="26"
+                height="26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="CuBottomNavigation_icon__cWvw7"
+                aria-label="Follow ClickUp on Facebook"
+              >
+                <rect
+                  x="0.2"
+                  y="0.061"
+                  width="25"
+                  height="25"
+                  rx="5.714"
+                  fill="var(--color-icon, #0D1530)"
+                ></rect>
+                <path
+                  d="M10.854 13.527H8.939c-.309 0-.406-.112-.406-.394v-2.271c0-.3.116-.395.406-.395h1.915V8.815c0-.75.135-1.464.522-2.121.406-.676.986-1.127 1.72-1.39a4.418 4.418 0 0 1 1.49-.243h1.894c.27 0 .387.112.387.375v2.14c0 .263-.116.376-.387.376-.522 0-1.044 0-1.566.018-.522 0-.793.244-.793.77-.02.563 0 1.108 0 1.69h2.243c.31 0 .425.112.425.413v2.271c0 .3-.096.395-.425.395h-2.243v6.12c0 .319-.096.431-.444.431H11.26c-.29 0-.406-.112-.406-.394v-6.139z"
+                  fill="#fff"
+                ></path></svg></a
+            ><a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuLink_underline__f9pW8 CuBottomNavigation_iconLink__B5gWN"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-segment-button-clicked="Instagram"
+              href="https://www.instagram.com/clickup/"
+              ><svg
+                width="26"
+                height="26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="CuBottomNavigation_icon__cWvw7"
+                aria-label="Follow ClickUp on Instagram"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.854.14c-2.3-.108-7.997-.103-10.299 0C5.533.233 3.748.721 2.31 2.16.158 4.313.178 7.134.206 11.107c.003.467.007.95.007 1.45 0 .467-.003.919-.005 1.356C.185 18.019.17 20.81 2.31 22.95c2.155 2.155 5.006 2.133 8.935 2.104.47-.003.957-.007 1.46-.007h.067c4.764 0 6.42 0 8.114-.656 2.316-.9 4.064-2.969 4.235-6.687.108-2.3.102-7.996 0-10.298-.206-4.389-2.562-7.05-7.267-7.267zm3.774 5.873a1.786 1.786 0 1 1-3.571 0 1.786 1.786 0 0 1 3.571 0zM12.7 17.322a4.762 4.762 0 1 0 0-9.524 4.762 4.762 0 0 0 0 9.524z"
+                  fill="var(--color-icon, #0D1530)"
+                ></path></svg></a
+            ><a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd CuLink_underline__f9pW8 CuBottomNavigation_iconLink__B5gWN"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-segment-button-clicked="Twitter"
+              href="https://twitter.com/clickup"
+              ><svg
+                width="26"
+                height="26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="CuBottomNavigation_icon__cWvw7"
+                aria-label="Follow ClickUp on Twitter"
+              >
+                <rect
+                  x="0.2"
+                  y="0.06"
+                  width="25"
+                  height="25"
+                  rx="5.714"
+                  fill="var(--color-icon, #0D1530)"
+                ></rect>
+                <path
+                  d="m14.132 11.411 5.587-6.351h-1.324l-4.852 5.515L9.67 5.06H5.2l5.86 8.34-5.86 6.66h1.325l5.123-5.824 4.092 5.824h4.469l-6.079-8.65zm-1.814 2.062-.594-.83-4.723-6.609h2.033l3.812 5.333.594.83 4.955 6.932h-2.033l-4.044-5.656z"
+                  fill="#fff"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+      </li>
+    </div>
+    <div>
+      <footer data-testid="footer" class="CuFooter_wrapper__7dR2h" id="footer">
+        <div class="row justify-between align-center CuFooter_container__s2XHr">
+          <div class="CuFooter_appStore__NcUnf">
+            <a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-segment-button-clicked="Apple App Store"
+              href="https://apps.apple.com/us/app/clickup-manage-teams-tasks/id1535098836"
+            >
+              <div
+                class="CuFooter_appStoreBadgeImage__126HY"
+                data-testid="cu-media-element"
+              >
+                <picture class="" data-testid="cu-image"
+                  ><img
+                    src="/assets/badges/v3/app-store-badge-black.svg"
+                    height="42"
+                    width="124"
+                    alt="Apple App Store"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 900px) 100vw, 50vw"
+                /></picture>
+              </div> </a
+            ><a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-segment-button-clicked="Google Play Store"
+              href="https://play.google.com/store/apps/details?id=co.mangotechnologies.clickup"
+            >
+              <div
+                class="CuFooter_appStoreBadgeImage__126HY"
+                data-testid="cu-media-element"
+              >
+                <picture class="" data-testid="cu-image"
+                  ><img
+                    src="/assets/badges/v3/google-play-badge-black.svg"
+                    height="42"
+                    width="124"
+                    alt="Google Play Store"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 900px) 100vw, 50vw"
+                /></picture>
+              </div> </a
+            ><a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd"
+              rel=""
+              target=""
+              data-segment-button-clicked="Mac App Store"
+              href="https://desktop.clickup.com/mac"
+            >
+              <div
+                class="CuFooter_appStoreBadgeImage__126HY"
+                data-testid="cu-media-element"
+              >
+                <picture class="" data-testid="cu-image"
+                  ><img
+                    src="/assets/badges/v3/app-store-mac-badge-black.svg"
+                    height="42"
+                    width="124"
+                    alt="Mac App Store"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 900px) 100vw, 50vw"
+                /></picture>
+              </div> </a
+            ><a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd"
+              rel=""
+              target=""
+              data-segment-button-clicked="Microsoft App Store"
+              href="https://desktop.clickup.com/windows"
+            >
+              <div
+                class="CuFooter_appStoreBadgeImage__126HY"
+                data-testid="cu-media-element"
+              >
+                <picture class="" data-testid="cu-image"
+                  ><img
+                    src="/assets/badges/v3/app-store-microsoft-badge-black.svg"
+                    height="42"
+                    width="124"
+                    alt="Microsoft App Store"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 900px) 100vw, 50vw"
+                /></picture>
+              </div>
+            </a>
+          </div>
+          <div class="row CuFooter_copyright__05Xv9">
+            <span>© 2024 ClickUp</span
+            ><a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd"
+              rel=""
+              target=""
+              data-segment-button-clicked="Security"
+              href="https://clickup.com/terms/security-policy"
+              >Security</a
+            ><a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd"
+              rel=""
+              target=""
+              data-segment-button-clicked="Privacy"
+              href="https://clickup.com/terms/privacy"
+              >Privacy</a
+            ><a
+              data-testid="cu-link"
+              class="CuLink_link__x0qqd"
+              rel=""
+              target=""
+              data-segment-button-clicked="Terms"
+              href="https://clickup.com/terms"
+              >Terms</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
